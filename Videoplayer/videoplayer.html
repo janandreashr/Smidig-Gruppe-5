@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="videoplayer.css">
+    <script src="https://kit.fontawesome.com/5dbd8e76ec.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Videoplayer</title>
@@ -28,11 +29,14 @@
                 </ul>
             </nav>
         </div>
-        <div class="iframe-container">
-            <iframe src="https://www.youtube.com/embed/IA61L0cteGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="iframe-container d-flex flex-row db-highlight mb-3">
+            <i class="fas fa-chevron-left p-2 db-highlight" style="font-size: 60px; text-align:center;"></i>
+            <iframe class="p-2 db-highlight" src="https://www.youtube.com/embed/IA61L0cteGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <i class="fas fa-chevron-right p-2 db-highlight" style="font-size: 60px;"></i>
         </div>
     </div>
 </body>
 
 <script src="../app.js"></script>
+
 </html>
