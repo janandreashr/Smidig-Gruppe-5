@@ -3,3 +3,22 @@
     margin: 0;
     padding: 0;
 }
+
+/* Navbar */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e8e6ff;
+}
+
+#navbar ul {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#navbar li a:hover:not(.active) {
+    background-color: #cbc9e2;
+}
