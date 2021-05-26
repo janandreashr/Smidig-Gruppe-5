@@ -1,3 +1,5 @@
+/* Predefined rules */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +13,7 @@
     top: 0;
     width: 100%;
     background-color: lavender;
+    border-bottom: 1px solid black;
 }
 
 #navbar ul {
@@ -20,17 +23,20 @@
 
 #navbar li {
     display: inline-block;
-    padding: 20px 16px;
+    padding: 30px 18px;
+    font-size: 20px;
+    color: black;
 }
 
-#navbar li a:hover:not(.active) {
-    background-color: #cbc9e2;
+#navbar li.hallo {
+    font-size: 35px;
+}
+
+#navbar li:hover {
+    color: mediumorchid;
 }
 
 .active {
     border-bottom: 2px solid mediumorchid;
-}
-
-.active:hover {
-    color: mediumorchid;
+    padding-bottom: 10px;
 }
