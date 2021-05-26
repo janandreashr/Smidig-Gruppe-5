@@ -1,5 +1,42 @@
+/* Predefined rules */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Navbar */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lavender;
+    border-bottom: 1px solid black;
+}
+
+#navbar ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    padding: 30px 18px;
+    font-size: 20px;
+    color: black;
+}
+
+#navbar li.hallo {
+    font-size: 35px;
+}
+
+#navbar li:hover {
+    color: mediumorchid;
+}
+
+.active {
+    border-bottom: 2px solid mediumorchid;
+    padding-bottom: 10px;
 }
