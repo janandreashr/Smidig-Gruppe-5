@@ -53,24 +53,25 @@
 
 /* Body */
 
-flex-container {
+.flex-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 }
 
-flex-container div {
-    width: 100px;
-    height: 100px;
-
+.flex-container div {
+    margin: 0 40px;
 }
 
 button {
-    width: 100px;
+    width: 200px;
+    height: 50px;
     color: white;
     background-color: darkmagenta;
-    border-radius: 30%;
+    border-radius: 50%;
     cursor: pointer;
 }
 
