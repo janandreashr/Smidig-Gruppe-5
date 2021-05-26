@@ -62,12 +62,3 @@
     border-top: 1px solid black;
 }
 
-p1 {
-    display: inline;
-    float: left;
-}
-
-p2 {
-    display: inline;
-    float: right;
-}
