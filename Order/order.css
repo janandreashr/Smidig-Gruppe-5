@@ -51,6 +51,29 @@
 }
 
 
+/* Body */
+
+flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+flex-container div {
+    width: 100px;
+    height: 100px;
+
+}
+
+button {
+    width: 100px;
+    color: white;
+    background-color: darkmagenta;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
 /* Footer */
 
 .footer{
@@ -76,12 +99,12 @@
 
 .fa-facebook {
     margin-left: 100px;
-    background: #3B5998;
+    background: darkmagenta;
     color: white;
 }
 
 .fa-instagram {
     margin-left: 10px;
-    background: #125688;
+    background: darkmagenta;
     color: white;
 }
