@@ -132,10 +132,17 @@ img.front-1{
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-self: start;
+    transition: transform .2s;
 }
 
 img.front-2{
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-self: end;
+    transition: transform .2s;
+}
+
+img:hover{
+    transform: scale(2);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
