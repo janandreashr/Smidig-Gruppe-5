@@ -51,22 +51,38 @@ img{
     height: 600px;
 }
 
-.iframe-container iframe{
+.videoSlide{
+    width: 1000px;
+}
+
+.videoSlide iframe{
     margin: 0 auto;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-<<<<<<< Updated upstream
-=======
 
 .iframe-container i{
     position: relative;
     top: 250px;
     margin: 20px;
+    cursor:pointer;
 }
 
+.videoSlide{
+    display:none;
+}
+
+.videoTxt{
+    text-align: center;
+}
+
+.videoSlide h3{
+    text-align: center;
+}
+
+/*
 .box-info{
     display: flex;
     margin: 0;
@@ -80,4 +96,4 @@ img{
     color: #99A3A4;
     padding: 10px;
 }
->>>>>>> Stashed changes
+*/
