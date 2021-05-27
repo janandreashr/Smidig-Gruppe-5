@@ -7,10 +7,12 @@
     <title>Tidvis - Forside</title>
     <link rel="stylesheet" href="frontpage.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/ccc4be94bb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body onload="myFunction()">
 <header>
@@ -36,8 +38,25 @@
         <!--Script.js will print all data from data.js here-->
     </div>
 </main>
+<div id="scroll-down" class="next">
+    <i class="fas fa-arrow-down" title="Gå videre"></i>
+</div>
 <footer>
 </footer>
 <script src="../app.js"></script>
+<script>
+    $(".next").click(function() {
+    var $target = $('.aos-init.active').next('.aos-init');
+    if ($target.length == 0)
+      $target = $('.aos-init:first');
+      
+    $('html, body').animate({
+      scrollTop: $target.offset().top
+    }, 'slow');
+  
+    $('.active').removeClass('active');
+    $target.addClass('active');
+  });
+</script>
 </body>
 </html>

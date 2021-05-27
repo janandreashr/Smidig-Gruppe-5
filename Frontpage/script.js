@@ -16,6 +16,13 @@ function insertAfter(referenceNode, newNode) {
     referenceNode.insertBefore(newNode, referenceNode.nextSibling);
   }
 
+
+function getNextPost(){
+    var currentId = document.getElementsByName("field1");
+    console.log(currentId);
+    location.href = '#'+ currentId;
+}
+
 function myFunction(){
     data.forEach(function (e) {
         const newDiv = document.createElement("div");
@@ -24,12 +31,22 @@ function myFunction(){
         const headline = document.createElement("h2");
         const pTag = document.createElement("p");
     
-        newDiv.setAttribute("data-aos-duration", "3000");
+        newDiv.setAttribute("data-aos-duration", "2500");
         newDiv.setAttribute("data-aos-anchor-placement", "center-bottom");
-        newDiv.setAttribute("class", "aos-init");
+        newDiv.setAttribute("class", "aos-init " + e.id);
+        if (e.id === 1){
+            newDiv.setAttribute("class", "aos-init "+ e.id +" active")
+        }
+
+        if (e.id === data.length){
+            newDiv.setAttribute("data-aos-anchor-placement", "top-bottom");
+            newDiv.style.marginBottom="200px";
+        }
         newDiv.setAttribute("data-aos-offset", "500");
         newImg.setAttribute("src", e.image);
+        newImg.setAttribute("title", e.headline);
         textDiv.setAttribute("class", "text");
+        newDiv.setAttribute("name", "field"+ e.id);
        
         newDiv.appendChild(textDiv);
         
@@ -48,6 +65,7 @@ function myFunction(){
             event.target.style.boxShadow ="rgba(0, 0, 0, 0.4) 0px 30px 90px";
             pTag.style.opacity="0.4";
             headline.style.opacity="0.4";
+
         })
 
         newImg.addEventListener("mouseleave", function(event){
@@ -73,4 +91,6 @@ function myFunction(){
         AOS.init();
     });
 }
+
+
 
