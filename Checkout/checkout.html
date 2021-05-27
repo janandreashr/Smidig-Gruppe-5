@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="checkout.css">
     <title>Utsjekking</title>
 </head>
-<body>
+<body onload="getCheckoutItem()">
 <header>
         <div id="navbar">
             <a href="frontpage.html"><div id="logo"></div></a>
@@ -20,6 +20,36 @@
             </ul>
         </div>
 </header>
+
+<div class="checkout-container">
+    <!-- <div>
+        <button onclick="getCheckoutItem()">View</button>
+        <img id="checkout-img" src="" alt="">
+        <h3 id="checkout-name">Test</h3>
+        <p id="checkout-price">Test</p>
+    </div> -->
+
+    <div>
+        <form action="">
+            <h3>Navn:</h3>
+            <label for="name"></label>
+            <input type="text">
+            <br>
+            <h3>E-mail:</h3>
+            <label for="email"></label>
+            <input type="text">
+            <br>
+            <h3>Telefonnummer:</h3>
+            <label for="phonenr"></label>
+            <input type="text">
+            <br>
+            <br>
+            <br>
+            <div id="checkout-items"></div>
+            <button onclick="testCheckout()">Bekreft bestilling</button>
+        </form>
+    </div>
+</div>
 
 <script src="../app.js"></script>
 </body>
