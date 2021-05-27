@@ -133,16 +133,19 @@ img.front-1{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-self: start;
     transition: transform .2s;
+    border-radius: 5px;
+    z-index: 10;
 }
 
 img.front-2{
     width: 90%;
+    z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     justify-self: end;
     transition: transform .2s;
+    border-radius: 5px;
 }
 
-img:hover{
-    transform: scale(2);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+.text-front{
+    transition: opacity .5s;
 }
