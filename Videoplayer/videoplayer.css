@@ -4,6 +4,79 @@
     padding: 0;
 }
 
+.wrapper{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+.fixed-header {
+    width: 100%;
+    position: fixed;        
+    background:#888B78;
+    padding: 8px 0;
+    color: black;
+}
+.fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background:#953C0D;
+    padding: 8px 0;
+    color: black;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+/* Some more styles to beutify this example */
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container p{
+    line-height: 200px; /* Create scrollbar to test positioning */
+}
+#image{
+    position: absolute;
+    left: 15px;
+    top: 12px;
+
+}
+#image-div{
+    position: absolute;
+    background: #96368B;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    left: 30px;
+}
+
+a:hover {
+    color:#96368B;
+  }
+
+a.active {
+    background-color: #96368B;
+    color: black;
+  }
+
+#sosial-media-logo1{
+    position: absolute;
+    bottom: 2px;
+    right: 20px;
+}
+#sosial-media-logo2{
+    position: absolute;
+    bottom: 2px;
+    right: 70px;
+}
+
+
+
+/*
 ul{
     list-style-type: none;
     margin: 0;
@@ -43,24 +116,28 @@ li a:hover:not(.active){
 img{
     border-radius: 20px;
 }
+*/
 
 .iframe-container{
     position: relative; 
-    top: 0;
+    top: 150px;
     width: 100%;
     height: 600px;
+    box-shadow: 5px 5px 15px gray;
 }
 
 .videoSlide{
     width: 1000px;
 }
 
-.videoSlide iframe{
-    margin: 0 auto;
+.videoSlide video{
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
+    margin-left: 12%;
+    margin-top: 5%;
 }
 
 .iframe-container i{
@@ -68,6 +145,8 @@ img{
     top: 250px;
     margin: 20px;
     cursor:pointer;
+    padding:0;
+    right: 150px;
 }
 
 .videoSlide{
@@ -76,10 +155,12 @@ img{
 
 .videoTxt{
     text-align: center;
+    margin-top: 400px;
 }
 
 .videoSlide h3{
     text-align: center;
+    margin: 5px;
 }
 
 /*
