@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidvis - Forside</title>
     <link rel="stylesheet" href="frontpage.css">
-    <title>Forside</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="https://kit.fontawesome.com/ccc4be94bb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-<body>
-
-</body>
+<body onload="myFunction()">
+<header>
+    <div id="navbar">
+        <a href="frontpage.html"><div id="logo"></div></a>
+        <ul>
+            <a href="frontpage.html"><li>Forsiden</li></a>
+            <a href="../Info/info.html"><li>Om prosjektet</li></a>
+            <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
+            <a href="../Order/order.html"><li>Bestilling av luktboks</li></a>
+            <a href="../Contact/contact.html"><li>Kontakt</li></a>
+        </ul>
+    </div>
+</header>
+<main>
+    <div id="text-size" onclick="decreaseFontSize()">
+        <h3>-</h3>
+    </div>
+    <div id="text-size2" onclick="increaseFontSize()">
+        <h3>+</h3>
+    </div>
+    <div id="container">
+        <!--Script.js will print all data from data.js here-->
+    </div>
+</main>
+<div id="scroll-down" class="next">
+    <i class="fas fa-arrow-down" title="Gå videre"></i>
+</div>
+<footer>
+</footer>
 <script src="../app.js"></script>
+<script>
+    $(".next").click(function() {
+    var $target = $('.aos-init.active').next('.aos-init');
+    if ($target.length == 0)
+      $target = $('.aos-init:first');
+      
+    $('html, body').animate({
+      scrollTop: $target.offset().top
+    }, 'slow');
+  
+    $('.active').removeClass('active');
+    $target.addClass('active');
+  });
+</script>
+</body>
 </html>
