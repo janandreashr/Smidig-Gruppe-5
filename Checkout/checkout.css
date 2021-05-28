@@ -58,3 +58,85 @@
     text-align: center;
     height: 100vh;
 }
+
+.checkout-container div {
+    margin: 0 40px;
+    font-size: 18px;
+    border-color: rgb(114, 11, 114);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: darkmagenta;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(114, 11, 114);
+}
+
+button:active {
+    background-color: rgb(92, 0, 92);
+}
+
+/* Footer */
+
+/* Footer */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    background-color: lavender;
+    border-top: 1px solid black;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    margin-left: 100px;
+    background: darkmagenta;
+    color: white;
+}
+
+.fa-facebook:hover {
+    background-color: rgb(114, 11, 114);
+}
+
+.fa-facebook:active {
+    background-color: rgb(92, 0, 92);
+}
+
+.fa-instagram {
+    margin-left: 10px;
+    background: darkmagenta;
+    color: white;
+}
+
+.fa-instagram:hover {
+    background-color: rgb(114, 11, 114);
+}
+
+.fa-instagram:active {
+    background-color: rgb(92, 0, 92);
+}

@@ -19,7 +19,9 @@ function getCheckoutItem(){
         price: ""
     }
 
-    document.getElementById("checkout-items").innerHTML = localStorage.getItem("checkoutItem");
+    var checkoutOutput = localStorage.getItem("checkoutItem");
+
+    document.getElementById("checkout-items").innerHTML = checkoutOutput;
 }
 
 /*obj = JSON.parse(checkoutItem);
