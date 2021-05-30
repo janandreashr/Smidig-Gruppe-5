@@ -1,27 +1,23 @@
 //Checkout scripts
 
-var checkoutItem = {
-    name: "",
-    image: "",
-    price: ""
-}
 
 
 function testCheckout(){
-if(localStorage.getItem('checkoutItem') == null){
-    localStorage.setItem('checkoutItem', '[name: John, image: null, price: 500]');
-}}
+    const checkoutItem = {name, image, price};
+    
+    if(localStorage.getItem("checkoutItem") == null){
+        
+        localStorage.setItem("checkoutItem", checkoutItem.name = "John",
+        checkoutItem.image = null,
+        checkoutItem.price = "500" ,JSON.stringify("checkoutItem"));
+    }}
+
 
 function getCheckoutItem(){
-    var checkoutItem = {
-        name: "",
-        image: "",
-        price: ""
-    }
 
-    var checkoutOutput = localStorage.getItem("checkoutItem");
-
-    document.getElementById("checkout-items").innerHTML = checkoutOutput;
+    var checkoutOutput = JSON.parse(localStorage.getItem("checkoutItem"));
+    const targetElement = document.getElementById("checkout-items");
+    targetElement.innerHTML = checkoutOutput;
 }
 
 /*obj = JSON.parse(checkoutItem);
