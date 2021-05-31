@@ -40,22 +40,22 @@
         <form action="">
             <h3>Navn:</h3>
             <label for="name"></label>
-            <input type="text">
+            <input type="text" id="name" placeholder="Navn">
             <br>
             <h3>E-mail:</h3>
             <label for="email"></label>
-            <input type="text">
+            <input type="text" id="email" placeholder="E-mail">
             <br>
             <h3>Telefonnummer:</h3>
             <label for="phonenr"></label>
-            <input type="text">
+            <input type="text" id="phonenumber" placeholder="Telefonnummer">
             <br>
             <br>
             <h3>Du har valgt:</h3>
             <br>
             <div id="checkout-items"></div>
             <br>
-            <button onclick="testCheckout()">Bekreft bestilling</button>
+            <button type="submit">Bekreft bestilling</button>
         </form>
     </div>
 </div>
@@ -70,7 +70,7 @@
     <a href="https://www.instagram.com/tidvis_as/" target="_blank" class="fa fa-instagram"></a>
 
 </div>
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="../app.js"></script>
 </body>
 </html>

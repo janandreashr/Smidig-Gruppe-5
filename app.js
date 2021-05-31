@@ -1,29 +1,31 @@
-//Checkout scripts
+/* Checkout scripts */
 
 
 
-function testCheckout(){
-    const checkoutItem = {name, image, price};
+/* AXIOS Scripts */
+
+const createOrder = (order) => {
+
+    axios.post( "https://localhost:5001/order/", order )
+        .then ( response => {
+
+        console.log( response.data );
+        appendToDOM([order]);
+        })
+        .catch(error => console.error(error));
     
-    if(localStorage.getItem("checkoutItem") == null){
-        
-        localStorage.setItem("checkoutItem", checkoutItem.name = "John",
-        checkoutItem.image = null,
-        checkoutItem.price = "500" ,JSON.stringify("checkoutItem"));
-    }}
-
-
-function getCheckoutItem(){
-
-    var checkoutOutput = JSON.parse(localStorage.getItem("checkoutItem"));
-    const targetElement = document.getElementById("checkout-items");
-    targetElement.innerHTML = checkoutOutput;
 }
 
-/*obj = JSON.parse(checkoutItem);
-    if(localStorage.getItem('checkoutItem') != null){
-        document.getElementById('checkout-items').innerHTML = obj.name;
-        console.log()
-    }else{
-        console.log("Handlekurven er tom")
-    }*/
+const form = document.querySelector('form');
+
+const formEvent = form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const name = document.querySelector('#name').value;
+    const phonenumber = document.querySelector('#phonenumber').value;
+    const email = document.querySelector('#email').value;
+    const package = document.querySelector('#checkout-items').value;
+
+    const order = { name, phonenumber, email, package };
+    createOrder(order);
+});
