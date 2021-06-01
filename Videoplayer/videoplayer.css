@@ -130,7 +130,7 @@ img{
     width: 1000px;
 }
 
-.videoSlide video{
+.videoSlide iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -144,9 +144,10 @@ img{
     position: relative;
     top: 250px;
     margin: 20px;
-    cursor:pointer;
-    padding:0;
+    cursor: pointer;
+    padding: 0;
     right: 150px;
+    justify-content: space-between;
 }
 
 .videoSlide{
