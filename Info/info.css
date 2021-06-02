@@ -1,7 +1,10 @@
+/* Predefined rules */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 ::selection {
@@ -13,6 +16,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
+/* Navbar */
+
 header{
     width: 100%;
     height: 65px;
@@ -23,18 +29,18 @@ header{
     position: fixed;
 }
 
-#navbar{
-    width: 60%;
-    margin: 0 auto;
-    height: 65px;
-}
-
 #logo{
     width: 70px;
     height: 70px;
     background-image: url(../images/logo-rund.svg);
     position: fixed;
     top: 40px;
+}
+
+#navbar{
+    width: 60%;
+    margin: 0 auto;
+    height: 65px;
 }
 
 #navbar ul{
