@@ -5,13 +5,13 @@
 }
 
 body {
-    background: #f3f3f3;
+    background: white;
     font-family: "Roboto", sans-serif;
 }
 
 header{
     width: 100%;
-    height: 50px;
+    height: 65px;
     background: #e6e6fa;
     top: 0;
     border-top: 3px solid #96398b;
@@ -22,16 +22,75 @@ header{
 #navbar{
     width: 50%;
     margin: 0 auto;
-    height: 50px;
+    height: 65px;
 }
 
 #logo{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-image: url(../images/logo-rund.svg);
     position: fixed;
-    top: 25px;
+    top: 40px;
 }
+
+#navbar ul{
+    width: 1000px;
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+#navbar li{
+    float: left;
+    margin-left: 30px;
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: black;
+    border-radius: 4px;
+}
+
+#navbar li:hover{
+    background: white;
+    color: #96398b;
+    padding-bottom: 9px;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #96398b;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer{
+    width: 50%;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#footer ul{
+    width: 1000px;
+}
+
+#footer li{
+    float: left;
+    list-style-type: none;
+    font-weight: bold;
+    width: 33%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#footer i{
+    color: black;
+    font-size: 30px;
+}
+
+
 
 #text-size{
     width: 50px;
@@ -103,42 +162,11 @@ header{
     100%{opacity: 1;}
 }
 
-i{
+#scroll-down i{
     width: 100px;
     height: 100px;
     font-size: 100px;
     color: gray;
-}
-
-footer{
-    width: 100%;
-    height: 30px;
-    background-color: #96398b;
-    position: fixed;
-    bottom: 0;
-}
-
-ul{
-    width: 1000px;
-    margin-left: 50px;
-    font-size: 14px;
-}
-
-li{
-    float: left;
-    margin-left: 30px;
-    list-style-type: none;
-    margin-top: 20px;
-    padding-top: 7px;
-    padding-left: 5px;
-    padding-right: 5px;
-    color: black;
-    border-radius: 4px;
-}
-
-li:hover{
-    background: #f3f3f3;
-    padding-bottom: 20px;
 }
 
 .text{
