@@ -17,6 +17,7 @@ header{
     border-top: 3px solid #96398b;
     z-index: 10;
     position: fixed;
+
 }
 
 #navbar{
@@ -26,8 +27,8 @@ header{
 }
 
 #logo{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-image: url(../images/logo-rund.svg);
     position: fixed;
     top: 40px;
@@ -43,19 +44,18 @@ header{
     float: left;
     margin-left: 30px;
     list-style-type: none;
-    font-weight: bold;
     margin-top: 30px;
     padding-top: 7px;
     padding-left: 7px;
     padding-right: 7px;
     color: black;
-    border-radius: 4px;
+    border-radius: 4px 4px 0px 0px;
 }
 
 #navbar li:hover{
     background: white;
     color: #96398b;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
 }
 
 footer{
@@ -79,23 +79,22 @@ footer{
 #footer li{
     float: left;
     list-style-type: none;
-    font-weight: bold;
     width: 33%;
     text-align: center;
     margin-top: 10px;
+    font-size: 16px;
 }
 
 #footer i{
     color: black;
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: 10px;
 }
-
-
 
 #text-size{
     width: 50px;
     height: 50px;
-    background-color: gray;
+    background-color: #96398b;
     position: fixed;
     z-index: 10;
     right: 5px;
@@ -107,7 +106,7 @@ footer{
 #text-size2{
     width: 50px;
     height: 50px;
-    background-color: gray;
+    background-color: #96398b;
     position: fixed;
     z-index: 10;
     right: 5px;
@@ -147,7 +146,7 @@ footer{
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    bottom: 30px;
+    bottom: 40px;
     position: fixed;
     left: 48%;
     animation-name: visible-hidden;
@@ -167,6 +166,10 @@ footer{
     height: 100px;
     font-size: 100px;
     color: gray;
+}
+
+#scroll-down :hover{
+    cursor: pointer;
 }
 
 .text{
