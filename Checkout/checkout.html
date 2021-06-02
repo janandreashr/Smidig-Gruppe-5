@@ -5,66 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="logo/svg" href="../images/logo-rund.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="checkout.css">
     <title>Utsjekking - Tidvis</title>
+    <script src="https://kit.fontawesome.com/ccc4be94bb.js" crossorigin="anonymous"></script>
 </head>
+
 <body onload="getCheckoutItem()">
-<header>
+
+    <header>
         <div id="navbar">
-            <a href="frontpage.html"><div id="logo"></div></a>
+            <a href="../Frontpage/frontpage.html"><div id="logo"></div></a>
             <ul>
                 <a href="../Frontpage/frontpage.html"><li>Forsiden</li></a>
                 <a href="../Info/info.html"><li>Om prosjektet</li></a>
                 <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
-                <a href="../Order/order.html"><li>Bestilling av luktboks</li></a>
+                <a href="../Order/order.html"><li class="active">Bestilling av luktboks</li></a>
                 <a href="../Contact/contact.html"><li>Kontakt</li></a>
             </ul>
         </div>
-</header>
+    </header>
 
-<div class="checkout-container">
-
-    <div>
-        <h1>Utsjekking</h1>
-        <br>
-        <br>
-        <h2>Vennligst fyll ut for å fullføre bestillingen</h2>
-        <h3>Faktura vil bli sendt per e-post</h3>
-        <form action="">
-            <h3>Navn:</h3>
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Navn">
-            <br>
-            <h3>E-mail:</h3>
-            <label for="email"></label>
-            <input type="text" id="email" placeholder="E-mail">
-            <br>
-            <h3>Telefonnummer:</h3>
-            <label for="phonenr"></label>
-            <input type="text" id="phonenumber" placeholder="Telefonnummer">
+    <div class="checkout-container">
+        <div>
+            <h1>Utsjekking</h1>
             <br>
             <br>
-            <h3>Du har valgt:</h3>
-            <br>
-            <div id="checkout-items"></div>
-            <br>
-            <button type="submit">Bekreft bestilling</button>
-        </form>
+            <h2>Vennligst fyll ut for å fullføre bestillingen</h2>
+            <h3>Faktura vil bli sendt per e-post</h3>
+            <form action="">
+                <h3>Navn:</h3>
+                <label for="name"></label>
+                <input type="text" id="name" placeholder="Navn">
+                <br>
+                <h3>E-mail:</h3>
+                <label for="email"></label>
+                <input type="text" id="email" placeholder="E-mail">
+                <br>
+                <h3>Telefonnummer:</h3>
+                <label for="phonenr"></label>
+                <input type="text" id="phonenumber" placeholder="Telefonnummer">
+                <br>
+                <br>
+                <h3>Du har valgt:</h3>
+                <br>
+                <div id="checkout-items"></div>
+                <br>
+                <button type="submit">Bekreft bestilling</button>
+            </form>
+        </div>
     </div>
-</div>
 
-<div class="footer">
-    <span>Rådhusgata 7, 0151 Oslo</span>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <span>Post@tidvis.no &nbsp; | &nbsp; +47 934 23 207</span>
-    <a href="https://www.facebook.com/tidvisas/" target ="_blank" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/tidvis_as/" target="_blank" class="fa fa-instagram"></a>
+    <footer>
+        <div id="footer">
+            <ul>
+                <li>Rådhusgata 7, 0151 Oslo</li>
+                <li><a href="https://www.facebook.com/tidvisas/"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/tidvis_as/"><i class="fab fa-instagram"></i></a></li>
+                <li>post@tidvis.no | +47 934 23 207</li>
+            </ul>
+        </div>
+        </footer>
 
-</div>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="../app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../app.js"></script>
 </body>
 </html>
