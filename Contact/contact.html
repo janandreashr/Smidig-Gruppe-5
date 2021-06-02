@@ -1,26 +1,96 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <title>Ta Kontakt</title>
-</head>
-<body>
-<header>
-    <div id="navbar">
-        <a href="frontpage.html"><div id="logo"></div></a>
-        <ul>
-            <a href="../Frontpage/frontpage.html"><li>Forsiden</li></a>
-            <a href="../Info/info.html"><li>Om prosjektet</li></a>
-            <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
-            <a href="../Order/order.html"><li>Bestilling av luktboks</li></a>
-            <a href="../Contact/contact.html"><li>Kontakt</li></a>
-        </ul>
-    </div>
-</header>
+    <title>Kontaktside</title>
 
-<script src="../app.js"></script>
-</body>
+    <link rel="stylesheet" href="../Contact/contact.css">
+    <script src="https://kit.fontawesome.com/34157dc1fd.js" crossorigin="anonymous"></script></head>
+
+    <body>
+      <header>
+        <div id="navbar">
+            <a href="frontpage.html"><div id="logo"></div></a>
+            <ul>
+                <a href="../Frontpage/frontpage.html"><li>Forsiden</li></a>
+                <a href="../Info/info.html"><li>Om prosjektet</li></a>
+                <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
+                <a href="../Order/order.html"><li>Bestilling av luktboks</li></a>
+                <a href="../html/kontakt.html"><li>Kontakt</li></a>
+            </ul>
+        </div>
+    </header>
+        <div class="container">
+          <div class="form">
+            <div class="kontakt-info">
+              <h3 class="tittel">Velkommen til Tidvis sin kontaktside.</h3>
+              <p class="tekst">
+                Rett under ser du kontaktinformasjonen våres. Til høyre kan du
+                fylle ut skjema hvis du vil bli kontaktet av oss snarest, for bla bla grunner.
+              </p>
+    
+              <div class="info">
+                <div class="informasjon">
+                    <i class="fas fa-map-pin"></i>
+                    <p>Rådhusgata 7, 0151 Oslo</p>
+                </div>
+                <div class="informasjon">
+                    <i class="fas fa-envelope"></i>
+                    <p>post@tidivis.no</p>
+                </div>
+                <div class="informasjon">
+                    <i class="fas fa-phone"></i>
+                    <p>+47 934 23 207</p>
+                </div>
+              </div>
+    
+              <div class="sosiale-medier">
+                <p>Du kan også finne oss på våres sosiale medier:</p>
+                <div class="sIkon">
+                  <a href="https://www.facebook.com/tidvisas/">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                  </a>
+                  <a href="https://www.instagram.com/tidvis_as/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="kontakt-form">
+              <form action="kontakt.html" autocomplete="off">
+                <h3 class="tittel">Vi kontakter deg!</h3>
+                <div class="input-container">
+                  <input type="text" name="name" class="input" />
+                  <label for="">Fullt navn: </label>
+                  <span>Username</span>
+                </div>
+                <div class="input-container">
+                  <input type="email" name="email" class="input" />
+                  <label for="">Email:</label>
+                  <span>Email</span>
+                </div>
+                <div class="input-container">
+                  <input type="tel" name="phone" class="input" />
+                  <label for="">Telefon nummer:</label>
+                  <span>Phone</span>
+                </div>
+                <div class="input-container textarea">
+                  <textarea name="message" class="input"></textarea>
+                  <label for="">Annet meldinger:</label>
+                  <span>Message</span>
+                </div>
+                <input type="submit" value="Send" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+        <footer>
+        </footer>
+        <script src="../js/index.js"></script>
+      </body>
 </html>
