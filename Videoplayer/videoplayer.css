@@ -1,3 +1,5 @@
+/* Predefined rules */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,119 +26,70 @@ background: rgba(130, 56, 137, 1);
     background-color: mediumorchid;
 }
 
-.wrapper{
-    width: 80%;
-    margin: 0 auto; /* Center the DIV horizontally */
+body {
+    background: white;
+    font-family: "Roboto", sans-serif;
 }
-.fixed-header {
+
+
+/* Navbar */
+
+header {
     width: 100%;
-    position: fixed;        
-    background:#888B78;
-    padding: 8px 0;
-    color: black;
-}
-.fixed-footer{
-    width: 100%;
-    position: fixed;        
-    background:#953C0D;
-    padding: 8px 0;
-    color: black;
-}
-.fixed-header{
+    height: 65px;
+    background: #e6e6fa;
     top: 0;
-}
-.fixed-footer{
-    bottom: 0;
-}    
-/* Some more styles to beutify this example */
-nav a{
-    color: black;
-    text-decoration: none;
-    padding: 7px 25px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.container p{
-    line-height: 200px; /* Create scrollbar to test positioning */
-}
-#image{
-    position: absolute;
-    left: 15px;
-    top: 12px;
-
-}
-#image-div{
-    position: absolute;
-    background: #96368B;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    left: 30px;
+    border-top: 3px solid #96398b;
+    z-index: 10;
+    position: fixed;
 }
 
-a:hover {
-    color:#96368B;
-  }
-
-a.active {
-    background-color: #96368B;
-    color: black;
-  }
-
-#sosial-media-logo1{
-    position: absolute;
-    bottom: 2px;
-    right: 20px;
-}
-#sosial-media-logo2{
-    position: absolute;
-    bottom: 2px;
-    right: 70px;
+#navbar {
+    width: 60%;
+    margin: 0 auto;
+    height: 65px;
 }
 
-
-
-/*
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+#logo {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/logo-rund.svg);
+    position: fixed;
+    top: 40px;
 }
 
-li{
+#navbar ul {
+    width: 1000px;
+    margin-left: 100px;
+    font-size: 14px;
+}
+
+#navbar li {
     float: left;
+    margin-left: 50px;
+    list-style-type: none;
+    margin-top: 30px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: black;
+    border-radius: 4px 4px 0px 0px;
 }
 
-li a{
-    display: block; 
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    margin: auto;
-    text-decoration: none;
+#navbar li:hover {
+    background: white;
+    color: #96398b;
+    padding-bottom: 8px;
 }
 
-li a:hover:not(.active){
-    background-color: #111;
-    text-decoration: none;
-    color: white;
+li.active {
+    background: white;
+    color: #96398b;
+    padding-bottom: 8px;
 }
 
-.active:hover{
-    text-decoration: none;
-    color: white;
-}
 
-.active{
-    background-color: purple;
-}
-
-img{
-    border-radius: 20px;
-}
-*/
+/* Body */
 
 .iframe-container{
     position: relative; 
@@ -206,18 +159,38 @@ img{
     margin: 5px;
 }
 
-/*
-.box-info{
-    display: flex;
-    margin: 0;
-    padding: 0;
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #96398b;
+    bottom: 0;
 }
 
-.box-info .box{
-    background-color: purple;
-    margin: 25px;
-    text-align: center;
-    color: #99A3A4;
-    padding: 10px;
+#footer{
+    width: 50%;
+    margin: 0 auto;
+    height: 40px;
 }
-*/
+
+#footer ul{
+    width: 1000px;
+}
+
+#footer li{
+    color: white;
+    float: left;
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#footer i{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
