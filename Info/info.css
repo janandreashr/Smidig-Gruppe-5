@@ -2,4 +2,196 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .3);
+  } 
+  ::-webkit-scrollbar-thumb {
+    background: rgba(130, 56, 137, .8);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(130, 56, 137, 1);
+  }
+  
+  /* Navbar */
+  
+  header {
+    width: 100%;
+    height: 65px;
+    background: #e6e6fa;
+    top: 0;
+    border-top: 3px solid #96398b;
+    z-index: 10;
+    position: fixed;
+  }
+  
+  #navbar {
+    width: 60%;
+    margin: 0 auto;
+    height: 65px;
+  }
+  
+  #logo {
+    width: 70px;
+    height: 70px;
+    background-image: url(../images/logo-rund.svg);
+    position: fixed;
+    top: 40px;
+    z-index: 10;
+  }
+  
+  #navbar ul {
+    width: 1000px;
+    margin-left: 100px;
+    font-size: 14px;
+  }
+  
+  #navbar li {
+    float: left;
+    margin-left: 50px;
+    list-style-type: none;
+    margin-top: 30px;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: black;
+    border-radius: 4px 4px 0px 0px;
+  }
+  
+  #navbar li:hover {
+    background: white;
+    color: #96398b;
+    padding-bottom: 8px;
+  }
+  
+  li.active {
+    background: white;
+    color: #96398b;
+    padding-bottom: 8px;
+  }
+  
+  
+  /* Hjem seksjon */
+  .hjemContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 64px;
+  }
+  
+  .hjemContainer::before{
+    height: 100vh;
+  }
+  
+  .hjemContainer h3{
+    margin-bottom: 20px;
+  }
+  
+  .hjemContainer p{
+    overflow-y: scroll;
+    height: 90%;
+    width: 100%;
+    margin-top: 10%;
+  }
+  
+  .bg{
+    color: black;
+    font-size: 18px;
+    font-weight: 350;
+  }
+  
+  .hjemContainer  div:nth-of-type(1){
+    grid-column: 1 / 3;
+    justify-content: center;
+  }
+  
+  .hjemContainer  div:nth-of-type(12){
+    grid-column: 1 / 5;
+  }
+  
+  .hjemContainer iframe{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*Div boksene i container*/
+  .hjemContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    max-height: 300px;
+    background-image: url('https://www.tidvis.no/media/splash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  /* Footer */
+  
+  footer{
+    width: 100%;
+    height: 40px;
+    background-color: #96398b;
+    bottom: 0;
+  }
+  
+  #footer{
+    width: 50%;
+    margin: 0 auto;
+    height: 40px;
+  }
+  
+  #footer ul{
+    width: 1000px;
+  }
+  
+  #footer li{
+    color: white;
+    float: left;
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  #footer i{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  
+  .footer-col ul li{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+  }
+  
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
