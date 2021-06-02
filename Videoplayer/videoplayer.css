@@ -130,7 +130,7 @@ img{
     width: 1000px;
 }
 
-.videoSlide video{
+.videoSlide iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -140,13 +140,36 @@ img{
     margin-top: 5%;
 }
 
-.iframe-container i{
+#i-left{
     position: relative;
     top: 250px;
     margin: 20px;
-    cursor:pointer;
-    padding:0;
-    right: 150px;
+    cursor: pointer;
+    padding: 0;
+    left: 15px;
+}
+
+#i-right{
+    position: relative;
+    top: 250px;
+    margin: 20px;
+    cursor: pointer;
+    padding: 0;
+    right: 15px;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
 }
 
 .videoSlide{
