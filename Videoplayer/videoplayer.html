@@ -43,7 +43,7 @@
             </nav>
         </div> -->
         <div class="iframe-container d-flex flex-row db-highlight mb-3">
-            <i onclick="plusVideos(-1)" class="fas fa-chevron-left p-2 db-highlight" style="font-size: 60px; text-align:center;"></i>
+            <i id="i-left" onclick="plusVideos(-1)" class="fas fa-chevron-left p-2 db-highlight" style="font-size: 60px; text-align:center;"></i>
                 <div class=videoSlide>
                     <h3>Oslo Havn 1798</h3>
                     <iframe class="p-2 db-highlight" src="https://www.youtube.com/embed/IA61L0cteGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -61,7 +61,14 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/IRus78MwDK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p class="videoTxt">En fortelling i videoformat om Leidangsnaust frå omlag år 900 på Veøya. Ta en tur i denne virtuelle fortellingen.</p>
                 </div>
-            <i onclick="plusVideos(1)" class="fas fa-chevron-right p-2 db-highlight" style="font-size: 60px;"></i>
+            <i id="i-right" onclick="plusVideos(1)" class="fas fa-chevron-right p-2 db-highlight" style="font-size: 60px;"></i>
+
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
         </div>
     </div>
     
