@@ -61,6 +61,6 @@ const formEvent = form.addEventListener('submit', event => {
     const order = { name, phonenumber, email, package };
     createOrder(order);
 
-    localStorage.clear();
+    //localStorage.clear();
     window.location.reload();
 });
