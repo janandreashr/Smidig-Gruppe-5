@@ -5,7 +5,8 @@ const data = [
         headline: 'Velkommen til Tidvis!',
         text: 'Tidvis er et ideelt selskap som utforsker og utvikler nye måter å formidle og tilgjengeliggjøre forskning på, med et spesielt fokus på historie. Vi mener historie er viktig, fordi det danner utgangspunktet for vår forståelse av nåtiden og hva vi forventer av fremtiden. <br> <br>' + 
         'Vår målsetning er å benytte både velkjente og nye virkemidler og teknologier. Eksempler på slike er databaser, spill, 3D-modeller, augmented og virtual reality, animasjoner, interaktive sanseopplevelser og god, fleksibel design på alle flater. <br><br>' + 
-        'Vi ønsker å nå bredt ut til flest mulig med elegante løsninger. Slik gjør vi det lettere for mennesker i dag å få erfaring med fortiden, og legger til rette for at flere får et bredere kunnskapsgrunnlag for å reflektere over nåtiden og fremtiden.'
+        'Vi ønsker å nå bredt ut til flest mulig med elegante løsninger. Slik gjør vi det lettere for mennesker i dag å få erfaring med fortiden, og legger til rette for at flere får et bredere kunnskapsgrunnlag for å reflektere over nåtiden og fremtiden.<br> <br>' + 
+        'Bla deg videre nedover for å få en liten smakebit av hva vi driver med. '
     }, 
     {
         id: 2,
@@ -40,4 +41,11 @@ const data = [
         headline: 'Lukten av 1700 - tallet',
         text: 'Utstillingen «Det sanselige 1700-tallet» er det nærmeste vi kan komme en tidsmaskin. Den gir publikum mulighet til å oppleve og reflektere over hvordan folk som levde gjennom 1700-tallet opplevde sine omgivelser – gjennom sansene: Hva de så rundt seg, hørte av lyder, smakte, luktet og kjente. For å sette sanseopplevelsene i ett større perspektiv er de satt i sammenheng med tidlig globalisering, sjøveis handel og de norske regionenes særtrekk.'
     },
+    {
+        id: 7,
+        image: '../images/p_luktboks_2.jpg',
+        headline: 'Alt dette kan nå oppleves digitalt!',
+        text: 'Ved hjelp av en digital løsning, et sett med luktbokser og god universell utforming kan vi nå frem til der brukeren er og du kan oppleve samtlige av våre produkter på nett. En skreddersydd løsning som gjør det mulig å sitte hjemme hos deg selv, på eldresenteret og tilpasse det til nettopp ditt bruk.<br><br>' + 
+        'Klikk deg inn <a href="../Order/order.html">her</a> for å bestille din luktboks idag! '
+    }
 ]

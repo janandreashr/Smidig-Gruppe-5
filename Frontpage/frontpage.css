@@ -31,6 +31,14 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+a{
+    color: #96398b;
+}
+
+a:hover{
+    color: #ff92ff;
+}
+
 
 /* Navbar */
 
