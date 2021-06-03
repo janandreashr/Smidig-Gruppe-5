@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="logo/svg" href="../images/logo-rund.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="order.css">
-    <title>Bestilling</title>
+    <title>Bestilling - Tidvis</title>
+    <script src="https://kit.fontawesome.com/ccc4be94bb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+
     <header>
         <div id="navbar">
             <a href="../Frontpage/frontpage.html"><div id="logo"></div></a>
             <ul>
+                <a href="../Frontpage/frontpage.html"><li>Forsiden</li></a>
                 <a href="../Info/info.html"><li>Om prosjektet</li></a>
                 <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
-                <a href="../Frontpage/frontpage.html"><li class="li-h1">Forsiden</li></a>
-                <a class="active" href="../Order/order.html"><li>Bestilling av luktboks</li></a>
+                <a href="../Order/order.html"><li class="active">Bestilling av luktboks</li></a>
                 <a href="../Contact/contact.html"><li>Kontakt</li></a>
             </ul>
         </div>
@@ -73,18 +78,18 @@
                 laborum.</p>
             <br>
             <button onclick="addPackage3(), location.href='../Checkout/checkout.html'">VELG</button>
+        </div>
     </div>
 
-    <div class="footer">
-        <span>Rådhusgata 7, 0151 Oslo</span>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>Post@tidvis.no &nbsp; | &nbsp; +47 934 23 207</span>
-        <a href="https://www.facebook.com/tidvisas/" target ="_blank" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/tidvis_as/" target="_blank" class="fa fa-instagram"></a>
-
+    <footer>
+    <div id="footer">
+        <ul>
+            <li>Rådhusgata 7, 0151 Oslo</li>
+            <li><a href="https://www.facebook.com/tidvisas/"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/tidvis_as/"><i class="fab fa-instagram"></i></a></li>
+            <li>post@tidvis.no | +47 934 23 207</li>
+        </ul>
     </div>
+    </footer>
 
     <script src="../app.js"></script>
 </body>

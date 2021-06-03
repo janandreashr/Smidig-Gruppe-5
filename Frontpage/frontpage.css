@@ -1,7 +1,29 @@
-*{
+/* Predefined rules */
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+background: rgba(255, 255, 255, .3);
+} 
+
+::-webkit-scrollbar-thumb {
+background: rgba(130, 56, 137, .8);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: rgba(130, 56, 137, 1);
+}
+
+::selection {
+    background-color: mediumorchid;
 }
 
 body {
@@ -9,7 +31,10 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header{
+
+/* Navbar */
+
+header {
     width: 100%;
     height: 65px;
     background: #e6e6fa;
@@ -19,13 +44,13 @@ header{
     position: fixed;
 }
 
-#navbar{
+#navbar {
     width: 60%;
     margin: 0 auto;
     height: 65px;
 }
 
-#logo{
+#logo {
     width: 70px;
     height: 70px;
     background-image: url(../images/logo-rund.svg);
@@ -33,13 +58,13 @@ header{
     top: 40px;
 }
 
-#navbar ul{
+#navbar ul {
     width: 1000px;
     margin-left: 100px;
     font-size: 14px;
 }
 
-#navbar li{
+#navbar li {
     float: left;
     margin-left: 50px;
     list-style-type: none;
@@ -51,50 +76,20 @@ header{
     border-radius: 4px 4px 0px 0px;
 }
 
-#navbar li:hover{
+#navbar li:hover {
     background: white;
     color: #96398b;
     padding-bottom: 8px;
 }
 
-li.active{
+li.active {
     background: white;
     color: #96398b;
     padding-bottom: 8px;
 }
 
-footer{
-    width: 100%;
-    height: 40px;
-    background-color: #96398b;
-    bottom: 0;
-}
 
-#footer{
-    width: 50%;
-    margin: 0 auto;
-    height: 40px;
-}
-
-#footer ul{
-    width: 1000px;
-}
-
-#footer li{
-    color: white;
-    float: left;
-    list-style-type: none;
-    width: 33%;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-#footer i{
-    color: white;
-    font-size: 25px;
-    margin-left: 10px;
-}
+/* Body */
 
 #text-size{
     width: 50px;
@@ -123,11 +118,13 @@ footer{
 #text-size2 h3{
     margin-left: 20px;
     margin-top: 15px;
+    color: white;
 }
 
 #text-size h3{
     padding-left: 23px;
     padding-top: 15px;
+    color: white;
 }
 
 
@@ -221,4 +218,40 @@ img.front-2{
 
 .text-front{
     transition: opacity .5s;
+}
+
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #96398b;
+    bottom: 0;
+}
+
+#footer{
+    width: 50%;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#footer ul{
+    width: 1000px;
+}
+
+#footer li{
+    color: white;
+    float: left;
+    list-style-type: none;
+    width: 33%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#footer i{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
 }
