@@ -1,4 +1,14 @@
 /* Predefined rules */
+:root {
+    --clr-primary: hsl(307, 45%, 41%);
+    --clr-secondary: hsl(240, 67%, 94%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Poppins', sans-serif;
+}
 
 * {
     box-sizing: border-box;
@@ -11,15 +21,15 @@
 }
   
 ::-webkit-scrollbar-track {
-background: rgba(255, 255, 255, .3);
+    background: hsla(0, 0%, 100%, 0.3);
 } 
 
 ::-webkit-scrollbar-thumb {
-background: rgba(130, 56, 137, .8);
+    background: hsla(295, 42%, 38%, 0.8);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: rgba(130, 56, 137, 1);
+    background: hsl(295, 42%, 38%);
 }
 
 ::selection {
@@ -27,8 +37,8 @@ background: rgba(130, 56, 137, 1);
 }
 
 body {
-    background: white;
-    font-family: "Roboto", sans-serif;
+    background: var(--clr-white);
+    font-family: var(--ff-primary);
 }
 
 
@@ -37,9 +47,9 @@ body {
 header {
     width: 100%;
     height: 65px;
-    background: #e6e6fa;
+    background: var(--clr-secondary);
     top: 0;
-    border-top: 3px solid #96398b;
+    border-top: 3px solid var(--clr-primary);
     z-index: 10;
     position: fixed;
 }
@@ -61,7 +71,7 @@ header {
 #navbar ul {
     width: 1000px;
     margin-left: 100px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 #navbar li {
@@ -72,19 +82,19 @@ header {
     padding-top: 7px;
     padding-left: 7px;
     padding-right: 7px;
-    color: black;
+    color: var(--clr-black);
     border-radius: 4px 4px 0px 0px;
 }
 
 #navbar li:hover {
-    background: white;
-    color: #96398b;
+    background: var(--clr-white);
+    color: var(--clr-primary);
     padding-bottom: 8px;
 }
 
 li.active {
-    background: white;
-    color: #96398b;
+    background: var(--clr-white);
+    color: var(--clr-primary);
     padding-bottom: 8px;
 }
 
@@ -102,30 +112,30 @@ li.active {
 
 .flex-container div {
     margin: 0 40px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 button {
     width: 200px;
     height: 50px;
-    font-size: 20px;
-    color: white;
-    background-color: darkmagenta;
+    font-size: 1.25rem;
+    color: var(--clr-white);
+    background-color: hsl(300, 100%, 27%);
     border: none;
     border-radius: 25px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(114, 11, 114);
+    background-color: hsl(300, 82%, 25%);
 }
 
 button:active {
-    background-color: rgb(92, 0, 92);
+    background-color: hsl(300, 100%, 18%);
 }
 
 /* Footer */
@@ -133,7 +143,7 @@ button:active {
 footer{
     width: 100%;
     height: 40px;
-    background-color: #96398b;
+    background-color: var(--clr-primary);
     bottom: 0;
 }
 
@@ -148,17 +158,17 @@ footer{
 }
 
 #footer li{
-    color: white;
+    color: var(--clr-white);
     float: left;
     list-style-type: none;
     width: 33%;
     text-align: center;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #footer i{
-    color: white;
-    font-size: 25px;
+    color: var(--clr-white);
+    font-size: 1.5625rem;
     margin-left: 10px;
 }
