@@ -79,23 +79,23 @@ header {
     margin-left: 50px;
     list-style-type: none;
     margin-top: 30px;
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-top: 0.4375rem;
+    padding-left: 0.4375rem;
+    padding-right: 0.4375rem;
     color: var(--clr-black);
-    border-radius: 4px 4px 0px 0px;
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 
 #navbar li:hover {
     background: var(--clr-white);
     color: var(--clr-primary);
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 
 li.active {
     background: var(--clr-white);
     color: var(--clr-primary);
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -113,6 +113,7 @@ li.active {
 .flex-container div {
     margin: 0 40px;
     font-size: 1.125rem;
+    width: clamp(31.25rem, 40%, 43.75rem);
 }
 
 h1 {
@@ -120,7 +121,7 @@ h1 {
 }
 
 button {
-    width: 200px;
+    width: clamp(6.25rem, 25%, 12.5rem);
     height: 50px;
     font-size: 1.25rem;
     color: var(--clr-white);

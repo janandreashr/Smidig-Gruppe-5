@@ -116,6 +116,7 @@ li.active {
     height: 75%;
     margin-left: 12%;
     margin-top: 5%;
+    aspect-ratio: 16/9;
 }
 
 #i-left{
