@@ -68,7 +68,7 @@ header {
     float: left;
     margin-left: 50px;
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 30px;
     padding-top: 7px;
     padding-left: 7px;
     padding-right: 7px;
@@ -90,6 +90,10 @@ li.active {
 
 
 /* Body */
+
+.container {
+    height: 100vh;
+}
 
 .iframe-container{
     position: relative; 
@@ -167,7 +171,6 @@ footer{
     height: 40px;
     background-color: #96398b;
     bottom: 0;
-    position: fixed;
 }
 
 #footer{
@@ -186,7 +189,7 @@ footer{
     list-style-type: none;
     width: 33%;
     text-align: center;
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 16px;
 }
 
