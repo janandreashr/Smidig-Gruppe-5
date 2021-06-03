@@ -28,7 +28,8 @@ background: rgba(130, 56, 137, 1);
 
 body {
     background: white;
-    font-family: "Roboto", sans-serif;
+    /* Important to override bootstrap default */
+    font-family: "Roboto", sans-serif !important;
 }
 
 
