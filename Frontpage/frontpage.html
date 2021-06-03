@@ -14,58 +14,65 @@
     <script src="script.js"></script>
     <script src="data.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 </head>
+
 <body onload="myFunction()">
-<header>
-    <div id="navbar">
-        <a href="../Frontpage/frontpage.html"><div id="logo"></div></a>
-        <ul>
-            <a href="../Frontpage/frontpage.html"><li class="active">Forsiden</li></a>
-            <a href="../Info/info.html"><li>Om prosjektet</li></a>
-            <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
-            <a href="../Order/order.html"><li>Bestilling av luktboks</li></a>
-            <a href="../Contact/contact.html"><li>Kontakt</li></a>
-        </ul>
+    
+    <header>
+        <div id="navbar">
+            <a href="../Frontpage/frontpage.html"><div id="logo"></div></a>
+            <ul>
+                <a href="../Frontpage/frontpage.html"><li class="active">Forsiden</li></a>
+                <a href="../Info/info.html"><li>Om prosjektet</li></a>
+                <a href="../Videoplayer/videoplayer.html"><li>Video/Lydavspilling</li></a>
+                <a href="../Order/order.html"><li>Bestilling av luktboks</li></a>
+                <a href="../Contact/contact.html"><li>Kontakt</li></a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="text-size" onclick="decreaseFontSize()">
+            <h3>-</h3>
+        </div>
+        <div id="text-size2" onclick="increaseFontSize()">
+            <h3>+</h3>
+        </div>
+        <div id="container">
+            <!--Script.js will print all data from data.js here-->
+        </div>
+    </main>
+
+    <div id="scroll-down" class="next">
+        <i class="fas fa-arrow-down" title="Gå videre"></i>
     </div>
-</header>
-<main>
-    <div id="text-size" onclick="decreaseFontSize()">
-        <h3>-</h3>
-    </div>
-    <div id="text-size2" onclick="increaseFontSize()">
-        <h3>+</h3>
-    </div>
-    <div id="container">
-        <!--Script.js will print all data from data.js here-->
-    </div>
-</main>
-<div id="scroll-down" class="next">
-    <i class="fas fa-arrow-down" title="Gå videre"></i>
-</div>
-<footer>
-    <div id="footer">
-        <ul>
-            <li>Rådhusgata 7, 0151 Oslo</li>
-            <li><a href="https://www.facebook.com/tidvisas/"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/tidvis_as/"><i class="fab fa-instagram"></i></a></li>
-            <li>post@tidvis.no | +47 934 23 207</li>
-        </ul>
-    </div>
-</footer>
-<script src="../app.js"></script>
-<script>
-    $(".next").click(function() {
-    var $target = $('.aos-init.active').next('.aos-init');
-    if ($target.length == 0)
-      $target = $('.aos-init:first');
-      
-    $('html, body').animate({
-      scrollTop: $target.offset().top
-    }, 'slow');
-  
-    $('.active').removeClass('active');
-    $target.addClass('active');
-  });
-</script>
+
+    <footer>
+        <div id="footer">
+            <ul>
+                <li>Rådhusgata 7, 0151 Oslo</li>
+                <li><a href="https://www.facebook.com/tidvisas/"><i class="fab fa-facebook"></i></a><a href="https://www.instagram.com/tidvis_as/"><i class="fab fa-instagram"></i></a></li>
+                <li>post@tidvis.no | +47 934 23 207</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../app.js"></script>
+    <script>
+
+        $(".next").click(function() {
+        var $target = $('.aos-init.active').next('.aos-init');
+        if ($target.length == 0)
+        $target = $('.aos-init:first');
+        
+        $('html, body').animate({
+        scrollTop: $target.offset().top
+        }, 'slow');
+    
+        $('.active').removeClass('active');
+        $target.addClass('active');
+    });
+    
+    </script>
 </body>
 </html>
