@@ -84,3 +84,30 @@ inputs.forEach((input) => {
     input.addEventListener("focus", focusFunc);
     input.addEventListener("blur", blurFunc);
 });
+
+/* Contact AXIOS */
+
+const createContact = (contact) =>{
+    axios.post( "https://localhost:5001/contact/", contact )
+        .then ( response => {
+
+        console.log( response.data );
+        appendToDOM([contact]);
+        })
+        .catch(error => console.error(error));
+    
+}
+
+const form = document.querySelector('form');
+
+const formEvent = form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const name = document.querySelector('#name').value;
+    const phonenumber = document.querySelector('#phonenumber').value;
+    const email = document.querySelector('#email').value;
+    const message = document.querySelector('#message').value;
+
+    const contact = { name, phonenumber, email, message };
+    createContact(contact);
+});
