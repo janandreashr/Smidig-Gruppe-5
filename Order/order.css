@@ -116,6 +116,11 @@ li.active {
     width: clamp(31.25rem, 40%, 43.75rem);
 }
 
+.flex-container div p {
+    margin: 0 auto;
+    width: clamp(40%, 80%, 90%);
+}
+
 h1 {
     font-size: 2.5rem;
 }
