@@ -4,9 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
   }
-  
   
 *::-webkit-scrollbar {
   width: 10px;
@@ -19,6 +17,12 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(130, 56, 137, 1);
+}
+
+body {
+  background: white;
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 /* Navbar */
