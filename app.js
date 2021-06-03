@@ -98,9 +98,7 @@ const createContact = (contact) =>{
     
 }
 
-const form = document.querySelector('form');
-
-const formEvent = form.addEventListener('submit', event => {
+const formEventContact = form.addEventListener('submit', event => {
     event.preventDefault();
 
     const name = document.querySelector('#name').value;
