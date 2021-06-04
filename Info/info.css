@@ -1,22 +1,13 @@
 /* Predefined rules */
 
-:root {
-  --clr-primary: hsl(307, 45%, 41%);
-  --clr-secondary: hsl(240, 67%, 94%);
-
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-black: hsl(0, 0%, 0%);
-
-  --ff-primary: 'Roboto', sans-serif;
-  --ff-accent: 'Poppins', sans-serif;
-}
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-  
+
+
 *::-webkit-scrollbar {
   width: 10px;
 }
@@ -30,14 +21,11 @@
   background: rgba(130, 56, 137, 1);
 }
 
-::selection {
-  background-color: mediumorchid;
+body{
+  width: 100vw;
+  height: 100vh;
 }
 
-body {
-  background: white;
-  font-family: var(--ff-accent);
-}
 
 /* Navbar */
 
@@ -97,8 +85,7 @@ li.active {
 }
 
 
-/* Body */
-
+/* Hjem seksjon */
 .hjemContainer{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -116,11 +103,6 @@ li.active {
   margin-bottom: 20px;
 }
 
-.hjemContainer p{
-  height: 90%;
-  width: 100%;
-  margin-top: 10%;
-}
 
 .bg{
   color: black;
@@ -129,12 +111,64 @@ li.active {
 }
 
 .hjemContainer  div:nth-of-type(1){
-  grid-column: 1 / 3;
-  justify-content: center;
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
 }
 
+.hjemContainer  div:nth-of-type(2){
+  background-image: url('https://tidvis.no/media/p_raadet.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(3){
+  background-image: url('https://tidvis.no/media/p_kattabiblioteket.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(4){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(5){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(6){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(7){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(8){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(9){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(10){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+.hjemContainer  div:nth-of-type(11){
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
+}
+
+
 .hjemContainer  div:nth-of-type(12){
-  grid-column: 1 / 5;
+  background-image: url('https://www.tidvis.no/media/splash.jpg');
+  background-size: cover;
 }
 
 .hjemContainer iframe{
@@ -144,15 +178,14 @@ li.active {
 
 /*Div boksene i container*/
 .hjemContainer div{
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   min-height: 200px;
-  max-height: 360px;
-  background-image: url('https://www.tidvis.no/media/splash.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  max-height: 300px;
 }
 
 /* Footer */
