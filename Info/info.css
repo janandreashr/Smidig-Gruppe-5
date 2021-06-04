@@ -30,6 +30,10 @@
   background: rgba(130, 56, 137, 1);
 }
 
+::selection {
+  background-color: mediumorchid;
+}
+
 body {
   background: white;
   font-family: var(--ff-accent);

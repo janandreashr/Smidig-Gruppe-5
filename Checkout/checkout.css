@@ -119,11 +119,16 @@ li.active {
 }
 
 .checkout-content {
+    height: 60vh;
     background: var(--clr-white);
     background-color: var(--clr-white);
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 25px;
+}
+
+.checkout-content form {
+    height: 60vh;
 }
 
 h1 {
