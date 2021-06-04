@@ -1,10 +1,21 @@
 /* Predefined rules */
 
+:root {
+  --clr-primary: hsl(307, 45%, 41%);
+  --clr-secondary: hsl(240, 67%, 94%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Poppins', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
   
 *::-webkit-scrollbar {
   width: 10px;
@@ -21,8 +32,7 @@
 
 body {
   background: white;
-  font-family: "Roboto", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: var(--ff-accent);
 }
 
 /* Navbar */

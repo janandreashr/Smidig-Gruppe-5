@@ -1,5 +1,16 @@
 /* Predefined rules */
 
+:root {
+    --clr-primary: hsl(307, 45%, 41%);
+    --clr-secondary: hsl(240, 67%, 94%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-accent: 'Poppins', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -28,7 +39,7 @@ background: rgba(130, 56, 137, 1);
 
 body {
     background: white;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--ff-accent);
 }
 
 a{
