@@ -108,6 +108,10 @@ li.active {
     align-items: center;
     text-align: center;
     height: 100vh;
+    background-image: url('https://www.tidvis.no/media/splash.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
 }
 
 .checkout-container div {
@@ -116,14 +120,10 @@ li.active {
 
 .checkout-content {
     background: var(--clr-white);
-    background-color: var(--clr-primary);
+    background-color: var(--clr-white);
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     padding: 30px;
-}
-
-.checkout-content h3 {
-    margin: 10px 0;
 }
 
 h1 {
