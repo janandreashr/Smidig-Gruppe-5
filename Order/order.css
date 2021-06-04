@@ -113,8 +113,7 @@ li.active {
 .flex-container div {
     margin: 0 40px;
     font-size: 1.125rem;
-    width: clamp(28rem, 40%, 39rem);
-    height: 60vh;
+    width: clamp(31.25rem, 40%, 43.75rem);
 }
 
 .flex-container div p,
@@ -123,7 +122,6 @@ li.active {
     margin: 0 auto;
     width: clamp(40%, 80%, 90%);
 }
-
 
 h1 {
     font-size: 2.5rem;
