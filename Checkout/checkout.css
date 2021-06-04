@@ -111,9 +111,19 @@ li.active {
 }
 
 .checkout-container div {
-    margin: 0 40px;
     font-size: 18px;
-    border-color: rgb(114, 11, 114);
+}
+
+.checkout-content {
+    background: var(--clr-white);
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.checkout-content h3 {
+    margin: 10px 0;
 }
 
 h1 {
