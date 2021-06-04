@@ -36,13 +36,13 @@ function getCheckoutItem(){
 
 /* AXIOS Scripts */
 
-const createOrder = (order) => {
+const createOrder = (newOrder) => {
 
-    axios.post( "https://localhost:5001/order/", order )
+    axios.post( "https://localhost:5001/Order/", newOrder )
         .then ( response => {
 
         console.log( response.data );
-        appendToDOM([order]);
+        appendToDOM([newOrder]);
         })
         .catch(error => console.error(error));
     
@@ -58,11 +58,11 @@ const formEvent = form.addEventListener('submit', event => {
     const email = document.querySelector('#email').value;
     const package = document.querySelector('#checkout-items').innerHTML;
 
-    const order = { name, phonenumber, email, package };
-    createOrder(order);
+    const newOrder = { name, phonenumber, email, package };
+    createOrder(newOrder);
 
     //localStorage.clear();
-    window.location.reload();
+    //window.location.reload();
 });
 
 //contact 
