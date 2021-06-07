@@ -7,7 +7,6 @@
     font-family: "Poppins", sans-serif;
   }
   
-  
   *::-webkit-scrollbar {
     width: 10px;
   }
@@ -20,12 +19,10 @@
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(130, 56, 137, 1);
   }
-  
-  body{
-    width: 100vw;
-    height: 100vh;
-  }
 
+  body{
+    background-color: rgba(230, 230, 250, .6);
+  }
 
   /* Navbar */
   
@@ -85,108 +82,153 @@
   }
   
   
+  /*Velkomsten*/
+
+  .velkomst{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .velkomst span{
+    text-transform: uppercase;
+  }
+
+  .velkommen{
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    height: 40%;
+    width: 100%;
+    color:rgba(255, 255, 255, .8);
+    text-align: center;
+    font-size: 50px; 
+    font-weight: 300;
+    letter-spacing: 8px;
+    background: rgba(130, 56, 137, 1);
+    animation: text 4s  ease-in-out;
+  }
+
+
   /* Hjem seksjon */
+
   .hjemContainer{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 10px;
     row-gap: 10px;
-    margin-top: 64px;
     height: 100vh;
   }
-  
-  .hjemContainer::before{
-    height: 100vh;
-  }
-  
-  .hjemContainer h3{
-    margin-bottom: 20px;
-  }
-  
 
-  .bg{
-    color: black;
-    font-size: 18px;
-    font-weight: 350;
+  .hjemContainer a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(130, 56, 137, 1);
   }
   
-  .hjemContainer  div:nth-of-type(1){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
+  .hjemContainer a:hover{
+    background-color: rgba(130, 56, 137, .6);
+    color: white;
+    animation-name: hoverOn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .hjemContainer a{
+    animation-name: hoverOff;
+    animation-duration: 1s;
+  }
+
+  
+  /*Div boksene i container*/
+  .hjemContainer div{
+    display: flex;
     background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    max-height: 300px;
+    border: 1px solid rgba(130, 56, 137, 1);
+  }
+    
+  .hjemContainer  div:nth-of-type(1){
+    background-image: url('https://www.tidvis.no/media/p_historiccrafts.jpg');
   }
 
   .hjemContainer  div:nth-of-type(2){
     background-image: url('https://tidvis.no/media/p_raadet.jpg');
-    background-size: cover;
+
   }
 
   .hjemContainer  div:nth-of-type(3){
     background-image: url('https://tidvis.no/media/p_kattabiblioteket.jpg');
-    background-size: cover;
   }
 
   .hjemContainer  div:nth-of-type(4){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_cave.jpg');
   }
 
   .hjemContainer  div:nth-of-type(5){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_oslo1324.jpg');
   }
 
   .hjemContainer  div:nth-of-type(6){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_sthallvard.jpg');
   }
 
   .hjemContainer  div:nth-of-type(7){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_tautra_2.jpg');
   }
 
   .hjemContainer  div:nth-of-type(8){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_einbitavhistoria.jpg');
   }
 
   .hjemContainer  div:nth-of-type(9){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_kingrama5.jpg');
   }
 
   .hjemContainer  div:nth-of-type(10){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_midtimiddelalderen.jpg');
   }
 
   .hjemContainer  div:nth-of-type(11){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_oslohavn.jpg');
   }
 
   
   .hjemContainer  div:nth-of-type(12){
-    background-image: url('https://www.tidvis.no/media/splash.jpg');
-    background-size: cover;
+    background-image: url('https://www.tidvis.no/media/p_det_sanselige.jpg');
+  }
+
+  .hjemContainer  div:nth-of-type(13){
+    background-image: url('https://www.tidvis.no/media/p_historiske_databaser.jpg');
+  }
+
+  .hjemContainer  div:nth-of-type(14){
+    background-image: url('https://www.tidvis.no/media/p_privilegert.jpg');
+  }
+
+  .hjemContainer  div:nth-of-type(15){
+    background-image: url('https://www.tidvis.no/media/p_fotogrammetri.jpg');
+  }
+
+  .hjemContainer  div:nth-of-type(16){
+    background-image: url('https://www.tidvis.no/media/p_luktboks.jpg');
+  }
+
+  .hjemContainer  div:nth-of-type(17){
+    background-image: url('https://www.tidvis.no/media/p_edvardsills.jpg');
   }
   
-  .hjemContainer iframe{
-    width: 100%;
-    height: 100%;
-  }
-  
-  /*Div boksene i container*/
-  .hjemContainer div{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 200px;
-    max-height: 300px;
-  }
   
   /* Footer */
   
@@ -224,28 +266,64 @@
   }
   
   .footer-col ul li{
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 300;
-      color: #bbbbbb;
-      display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
   }
   
   .footer-col .social-links a{
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: rgba(255,255,255,0.2);
-      text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      color: #ffffff;
-      transition: all 0.5s ease;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
   }
   
   .footer-col .social-links a:hover{
       color: #24262b;
       background-color: #ffffff;
+  }
+
+
+  /*Keyframes*/
+
+  @keyframes text {
+    0%{
+      color: rgba(130, 56, 137, 1);
+    }
+    40%{
+      letter-spacing: 25px;
+      color: pink;
+    }
+    85%{
+      letter-spacing: 8px;
+    } 
+  }
+
+  @keyframes hoverOn{
+    from{
+      height: 5rem;
+    }
+
+    to{
+      height: 100%;
+    }
+  }
+
+  @keyframes hoverOff{
+    from{
+      height: 100%;
+    }
+
+    to{
+      height: 5rem;
+    }
   }
