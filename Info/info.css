@@ -1,4 +1,14 @@
 /* Predefined rules */
+:root {
+  --clr-primary: hsl(307, 45%, 41%);
+  --clr-secondary: hsl(240, 67%, 94%);
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Poppins', sans-serif;
+}
 
 * {
     box-sizing: border-box;
@@ -7,242 +17,278 @@
     font-family: "Poppins", sans-serif;
   }
   
-  *::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, .3);
-  } 
-  ::-webkit-scrollbar-thumb {
-    background: rgba(130, 56, 137, .8);
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(130, 56, 137, 1);
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .3);
+} 
+::-webkit-scrollbar-thumb {
+  background: rgba(130, 56, 137, .8);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(130, 56, 137, 1);
+}
 
-  body{
-    background-color: rgba(230, 230, 250, .6);
-  }
+html {
+  height: 100%;
+}
 
-  /* Navbar */
+body{
+  background: var(--clr-white);
+  font-family: var(--ff-accent);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Navbar */
+
+header {
+  width: 100%;
+  height: 4.0625rem;
+  background: var(--clr-secondary);
+  top: 0;
+  border-top: 3px solid var(--clr-primary);
+  position: fixed;
+}
+
+#logo {
+  width: 4.375rem;
+  height: 4.375rem;
+  background-image: url(../images/logo-rund.svg);
+  position: fixed;
+  margin: 2rem;
+}
+
+#navbar ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--clr-black);
+}
+
+#navbar li {
+  list-style: none;
+  font-size: 1rem;
+  margin-left: 3.125rem;
+  margin-top: 1.875rem;
+  padding-top: 0.4375rem;
+  padding-left: 0.4375rem;
+  padding-right: 0.4375rem;
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+
+#navbar a:hover {
+  color: var(--clr-primary);
+}
+
+#navbar li:hover {
+  background: var(--clr-white);
+  padding-bottom: 0.5rem;
+}
+
+li.active {
+  background: var(--clr-white);
+  color: var(--clr-primary);
+  padding-bottom: 0.5rem;
+}
+
+.toggle-nav {
+  position: absolute;
+  top: 1.7rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-nav .line {
+  height: 3px;
+  width: 100%;
+  background-color: var(--clr-primary);
+  border-radius: 10px;
+}
+
+
+/* Body */
+
+.container {
+  margin-top: 4.0625rem;
+}
+
+/*Velkomsten*/
+
+.velkomst{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.velkomst span{
+  text-transform: uppercase;
+}
+
+.velkommen{
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+  height: 40%;
+  width: 100%;
+  color:rgba(255, 255, 255, .8);
+  text-align: center;
+  font-size: 50px; 
+  font-weight: 300;
+  letter-spacing: 8px;
+  background: rgba(130, 56, 137, 1);
+  animation: text 4s  ease-in-out;
+}
+
+
+/* Hjem seksjon */
+
+.hjemContainer{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  height: 100vh;
+}
+
+.hjemContainer a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(130, 56, 137, 1);
+}
+
+.hjemContainer a:hover{
+  background-color: rgba(130, 56, 137, .6);
+  color: white;
+  animation-name: hoverOn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.hjemContainer a{
+  animation-name: hoverOff;
+  animation-duration: 1s;
+}
+
+
+/*Div boksene i container*/
+.hjemContainer div{
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 200px;
+  max-height: 300px;
+  border: 1px solid rgba(130, 56, 137, 1);
+}
   
-  header {
-    width: 100%;
-    height: 65px;
-    background: #e6e6fa;
-    top: 0;
-    border-top: 3px solid #96398b;
-    z-index: 10;
-    position: fixed;
-  }
-  
-  #navbar {
-    width: 60%;
-    margin: 0 auto;
-    height: 65px;
-  }
-  
-  #logo {
-    width: 70px;
-    height: 70px;
-    background-image: url(../images/logo-rund.svg);
-    position: fixed;
-    top: 40px;
-    z-index: 10;
-  }
-  
-  #navbar ul {
-    width: 1000px;
-    margin-left: 100px;
-    font-size: 14px;
-  }
-  
-  #navbar li {
-    float: left;
-    margin-left: 50px;
-    list-style-type: none;
-    margin-top: 30px;
-    padding-top: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    color: black;
-    border-radius: 4px 4px 0px 0px;
-  }
-  
-  #navbar li:hover {
-    background: white;
-    color: #96398b;
-    padding-bottom: 8px;
-  }
-  
-  li.active {
-    background: white;
-    color: #96398b;
-    padding-bottom: 8px;
-  }
-  
-  
-  /*Velkomsten*/
+.hjemContainer  div:nth-of-type(1){
+  background-image: url('https://www.tidvis.no/media/p_historiccrafts.jpg');
+}
 
-  .velkomst{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
+.hjemContainer  div:nth-of-type(2){
+  background-image: url('https://tidvis.no/media/p_raadet.jpg');
 
-  .velkomst span{
-    text-transform: uppercase;
-  }
+}
 
-  .velkommen{
-    margin-top: 7rem;
-    margin-bottom: 3rem;
-    height: 40%;
-    width: 100%;
-    color:rgba(255, 255, 255, .8);
-    text-align: center;
-    font-size: 50px; 
-    font-weight: 300;
-    letter-spacing: 8px;
-    background: rgba(130, 56, 137, 1);
-    animation: text 4s  ease-in-out;
-  }
+.hjemContainer  div:nth-of-type(3){
+  background-image: url('https://tidvis.no/media/p_kattabiblioteket.jpg');
+}
+
+.hjemContainer  div:nth-of-type(4){
+  background-image: url('https://www.tidvis.no/media/p_cave.jpg');
+}
+
+.hjemContainer  div:nth-of-type(5){
+  background-image: url('https://www.tidvis.no/media/p_oslo1324.jpg');
+}
+
+.hjemContainer  div:nth-of-type(6){
+  background-image: url('https://www.tidvis.no/media/p_sthallvard.jpg');
+}
+
+.hjemContainer  div:nth-of-type(7){
+  background-image: url('https://www.tidvis.no/media/p_tautra_2.jpg');
+}
+
+.hjemContainer  div:nth-of-type(8){
+  background-image: url('https://www.tidvis.no/media/p_einbitavhistoria.jpg');
+}
+
+.hjemContainer  div:nth-of-type(9){
+  background-image: url('https://www.tidvis.no/media/p_kingrama5.jpg');
+}
+
+.hjemContainer  div:nth-of-type(10){
+  background-image: url('https://www.tidvis.no/media/p_midtimiddelalderen.jpg');
+}
+
+.hjemContainer  div:nth-of-type(11){
+  background-image: url('https://www.tidvis.no/media/p_oslohavn.jpg');
+}
 
 
-  /* Hjem seksjon */
+.hjemContainer  div:nth-of-type(12){
+  background-image: url('https://www.tidvis.no/media/p_det_sanselige.jpg');
+}
 
-  .hjemContainer{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
-    height: 100vh;
-  }
+.hjemContainer  div:nth-of-type(13){
+  background-image: url('https://www.tidvis.no/media/p_historiske_databaser.jpg');
+}
 
-  .hjemContainer a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 5rem;
-    font-size: 2rem;
-    cursor: pointer;
-    text-decoration: none;
-    color: rgba(130, 56, 137, 1);
-  }
-  
-  .hjemContainer a:hover{
-    background-color: rgba(130, 56, 137, .6);
-    color: white;
-    animation-name: hoverOn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
+.hjemContainer  div:nth-of-type(14){
+  background-image: url('https://www.tidvis.no/media/p_privilegert.jpg');
+}
 
-  .hjemContainer a{
-    animation-name: hoverOff;
-    animation-duration: 1s;
-  }
+.hjemContainer  div:nth-of-type(15){
+  background-image: url('https://www.tidvis.no/media/p_fotogrammetri.jpg');
+}
 
-  
-  /*Div boksene i container*/
-  .hjemContainer div{
-    display: flex;
-    background-size: cover;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    min-height: 200px;
-    max-height: 300px;
-    border: 1px solid rgba(130, 56, 137, 1);
-  }
-    
-  .hjemContainer  div:nth-of-type(1){
-    background-image: url('https://www.tidvis.no/media/p_historiccrafts.jpg');
-  }
+.hjemContainer  div:nth-of-type(16){
+  background-image: url('https://www.tidvis.no/media/p_luktboks.jpg');
+}
 
-  .hjemContainer  div:nth-of-type(2){
-    background-image: url('https://tidvis.no/media/p_raadet.jpg');
-
-  }
-
-  .hjemContainer  div:nth-of-type(3){
-    background-image: url('https://tidvis.no/media/p_kattabiblioteket.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(4){
-    background-image: url('https://www.tidvis.no/media/p_cave.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(5){
-    background-image: url('https://www.tidvis.no/media/p_oslo1324.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(6){
-    background-image: url('https://www.tidvis.no/media/p_sthallvard.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(7){
-    background-image: url('https://www.tidvis.no/media/p_tautra_2.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(8){
-    background-image: url('https://www.tidvis.no/media/p_einbitavhistoria.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(9){
-    background-image: url('https://www.tidvis.no/media/p_kingrama5.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(10){
-    background-image: url('https://www.tidvis.no/media/p_midtimiddelalderen.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(11){
-    background-image: url('https://www.tidvis.no/media/p_oslohavn.jpg');
-  }
-
-  
-  .hjemContainer  div:nth-of-type(12){
-    background-image: url('https://www.tidvis.no/media/p_det_sanselige.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(13){
-    background-image: url('https://www.tidvis.no/media/p_historiske_databaser.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(14){
-    background-image: url('https://www.tidvis.no/media/p_privilegert.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(15){
-    background-image: url('https://www.tidvis.no/media/p_fotogrammetri.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(16){
-    background-image: url('https://www.tidvis.no/media/p_luktboks.jpg');
-  }
-
-  .hjemContainer  div:nth-of-type(17){
-    background-image: url('https://www.tidvis.no/media/p_edvardsills.jpg');
-  }
+.hjemContainer  div:nth-of-type(17){
+  background-image: url('https://www.tidvis.no/media/p_edvardsills.jpg');
+}
   
   
-  /* Footer */
+/* Footer */
 
 footer{
   width: 100%;
   height: 40px;
-  background-color: #96398b;
+  background-color: var(--clr-primary);
   bottom: 0;
+  margin-top: auto;
 }
 
 #footer{
-  width: 50%;
-  margin: 0 auto;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #footer ul{
@@ -250,53 +296,61 @@ footer{
 }
 
 #footer li{
-  color: white;
+  color: var(--clr-white);
   float: left;
   list-style-type: none;
   width: 33%;
   text-align: center;
-  margin-top: 10px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 #footer i{
-  color: white;
-  font-size: 25px;
+  color: var(--clr-white);
+  font-size: 1.5625rem;
   margin-left: 10px;
 }
 
 
-  /*Keyframes*/
+/* Media Queries */
 
-  @keyframes text {
-    0%{
-      color: rgba(130, 56, 137, 1);
-    }
-    40%{
-      letter-spacing: 25px;
-      color: pink;
-    }
-    85%{
-      letter-spacing: 8px;
-    } 
+@media (max-width: 850px) {
+  .toggle-nav {
+      display: flex;
   }
 
-  @keyframes hoverOn{
-    from{
-      height: 5rem;
-    }
-
-    to{
-      height: 100%;
-    }
+  .links {
+      display: none;
+      width: 100%;
   }
 
-  @keyframes hoverOff{
-    from{
-      height: 100%;
-    }
-
-    to{
-      height: 5rem;
-    }
+  #navbar {
+      flex-direction: column;
+      align-items: flex-start;
   }
+
+  .links ul {
+      width: 100%;
+      flex-direction: column;
+      background-color: var(--clr-secondary);
+  }
+
+  #navbar li {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+      padding-bottom: .5rem;
+      text-align: center;
+  }
+
+  #navbar li:nth-child(1) {
+      margin-top: 1.875rem;;
+  }
+
+  .links.active {
+      display: flex;
+  }
+
+  #footer li{
+      font-size: 12px;
+  }
+}

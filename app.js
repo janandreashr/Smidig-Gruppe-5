@@ -1,3 +1,14 @@
+
+/* Navbar toggle-nav */
+
+const toggleNav = document.getElementsByClassName('toggle-nav')[0]
+const navbarLinks = document.getElementsByClassName('links')[0]
+
+toggleNav.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
+
+
 /* Localstorage scripts */
 function addPackage1(){
     const package1 = {
@@ -30,8 +41,6 @@ function getCheckoutItem(){
 
     
 }
-
-
 
 
 /* AXIOS Scripts */
@@ -85,6 +94,7 @@ inputs.forEach((input) => {
     input.addEventListener("blur", blurFunc);
 });
 
+
 /* Contact AXIOS */
 
 const createContact = (contact) =>{
@@ -109,3 +119,5 @@ const formEventContact = form.addEventListener('submit', event => {
     const contact = { name, phonenumber, email, message };
     createContact(contact);
 });
+
+
