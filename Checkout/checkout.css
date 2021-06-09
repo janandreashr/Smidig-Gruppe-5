@@ -22,15 +22,15 @@
 }
   
 ::-webkit-scrollbar-track {
-background: rgba(255, 255, 255, .3);
+    background: hsla(0, 0%, 100%, 0.3);
 } 
 
 ::-webkit-scrollbar-thumb {
-background: rgba(130, 56, 137, .8);
+    background: hsla(295, 42%, 38%, 0.8);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: rgba(130, 56, 137, 1);
+    background: hsl(295, 42%, 38%);
 }
 
 ::selection {
@@ -130,13 +130,12 @@ li.active {
 /* Body */
 
 .checkout-container {
-    margin-top: 4.0625rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 110vh;
+    height: 100vh;
     background-image: url('https://www.tidvis.no/media/splash.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -144,18 +143,20 @@ li.active {
 }
 
 .checkout-container div {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .checkout-content {
-    max-height: 65vh;
-    min-height: 60vh;
+    max-height: 650px;
     background: var(--clr-white);
     background-color: var(--clr-white);
     border-radius: 10px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    overflow: auto;
+    box-shadow: 0 0 20px 1px hsla(0, 0%, 0%, 0.1);
+    padding: 1.5625rem;
+}
+
+.checkout-content >* {
+    margin-top: 10px;
 }
 
 .checkout-content form {
@@ -163,98 +164,94 @@ li.active {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 button {
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    color: white;
-    background-color: darkmagenta;
+    width: 12.5rem;
+    height: 3.125rem;
+    font-size: 1.25rem;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
     border: none;
     border-radius: 25px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: rgb(114, 11, 114);
+    background-color: hsl(300, 82%, 25%);
 }
 
 button:active {
-    background-color: rgb(92, 0, 92);
+    background-color: hsl(300, 100%, 18%);
 }
+
 
 /* Checkout-container */
 
-
-  form{
+form {
     padding: 2.3rem 2.2rem;
-  }
+}
 
-  .input-container {
+.input-container {
     position: relative;
     margin: 0.5 rem 0;
-    padding: 2px;
-  }
-    
-  .input {
+    padding: 0.125rem;
+}
+
+.input {
     width: 100%;
     outline: none;
     border: none;
     background: none;
     font-weight: 500;
     font-size: .88rem;
-    letter-spacing: 0.5px;
-    border-bottom:1px solid rgba(0, 0, 0, .5);
+    letter-spacing: .03125rem;
+    border-bottom:1px solid hsla(0, 0%, 0%, 0.5);
     transition: 0.3s;
     border-width: 100%;
-    min-height: 5px;
-    }
-  
-  .input:focus{
+    min-height: 0.3125rem;
+}
+
+.input:focus {
     border: none;
     outline: none;
-    border-bottom:1px solid #fff;
-    }
-  
-  textarea.input {
-    min-height: 50px;
+    border-bottom:1px solid hsl(0, 0%, 100%);
+}
+
+textarea.input {
+    min-height: 3.125rem;
     resize: none;
     overflow-y: auto;
-  }
-  
-  label{
-      padding-bottom:1.3rem ;
-  }
-  
-  
+}
 
-  
-  .btn {
+label {
+    padding-bottom: 1.3rem;
+}
+
+.btn {
     padding: 0.6rem 1.3rem;
-    background-color: #fff;
-    border: 2px solid #fafafa;
+    background-color: var(--clr-white);
+    border: 2px solid hsl(0, 0%, 98%);
     font-size: 0.95rem;
-    color: rgba(130, 56, 137, .8);
+    color: hsla(295, 42%, 38%, 0.8);
     line-height: 1;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
     margin: 0;
-  }
-  
-  .btn:hover {
-    background-color: transparent;
-    color: #fff;
-  }
+}
 
-  
+.btn:hover {
+    background-color: transparent;
+    color: var(--clr-white);
+}
+
 
 /* Footer */
 
-footer{
+footer {
     width: 100%;
     height: 40px;
     background-color: var(--clr-primary);
@@ -330,5 +327,14 @@ footer{
 
     #footer li{
         font-size: 12px;
+    }
+}
+
+@media (max-height: 900px) {
+    .checkout-content {
+        overflow-y: scroll;
+        min-height: 60vh;
+        max-height: 65vh;
+        width: 80%;
     }
 }
