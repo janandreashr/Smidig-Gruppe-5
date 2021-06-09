@@ -22,13 +22,13 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, .3);
+  background: hsla(0, 0%, 100%, 0.3);
 } 
 ::-webkit-scrollbar-thumb {
-  background: rgba(130, 56, 137, .8);
+  background: hsla(295, 42%, 38%, 0.8);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(130, 56, 137, 1);
+  background: hsl(295, 42%, 38%);
 }
 
 html {
